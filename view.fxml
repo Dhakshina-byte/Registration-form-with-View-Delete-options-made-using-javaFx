@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DynamicPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="669.0" stylesheets="@bg2.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="table">
+   <children>
+      <TableView fx:id="Table" blendMode="MULTIPLY" layoutX="-3.0" prefHeight="411.0" prefWidth="676.0">
+        <columns>
+          <TableColumn fx:id="FullN" prefWidth="165.0" text="Full Name" />
+          <TableColumn fx:id="Con" prefWidth="121.0" text="Contact" />
+            <TableColumn fx:id="Age" prefWidth="67.0" text="Age" />
+            <TableColumn fx:id="mail" prefWidth="178.0" text="Email" />
+            <TableColumn fx:id="delete" prefWidth="142.0" text="delete" />
+        </columns>
+      </TableView>
+      <Button blendMode="ADD" layoutX="497.0" layoutY="414.0" mnemonicParsing="false" onAction="#ret" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color: #d3d3d3;" text="⬅ Return">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
